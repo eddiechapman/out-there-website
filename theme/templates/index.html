@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% from "macros.html" import card_event, card_news %}
+
+{% block content %}
+
+  {% include "includes/carousel.html" %}
+
+  {% include "includes/description.html" %}
+
+  {% for category, articles in categories %}
+    {% if category == "events" %}
+      {% set next_event = (articles|future_events()|first) %}
+      {{ card_event(next_event) }}
+    {% endif %}
+  {% endfor %}
+
+  {% for category, articles in categories %}
+    {% if category == "news" %}
+      {% for article in articles[:1] %}
+      {{ card_news(article) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+{% endblock %}

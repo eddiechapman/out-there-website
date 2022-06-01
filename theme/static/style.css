@@ -1,0 +1,20 @@
+@import "background.css";
+
+body {
+    font-family: 'Lora', serif;
+}
+
+article {
+    margin-bottom: 4rem;
+    background-color: white;
+}
+
+.article-title {
+    padding-top: .5rem;
+    margin-bottom: .25rem;
+    font-size: 2rem;
+}
+
+.article-meta {
+    color: #727272;
+}

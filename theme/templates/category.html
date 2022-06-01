@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% from "macros.html" import card_news, card_event,  title_card %}
+
+{% block content %}
+
+{% if category == "events" %}
+  <h3 class="pb-2 px-1 mx-1 mb-2">Events</h3>
+  
+  
+  {% for category, articles in categories %}
+    {% if category == "events" %}
+      {% for article in articles|future_events() %}
+        {{ card_event(article) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+  <h3 class="pb-2 px-1 mx-1 mb-2 fst-italic">Past events</h3> 
+
+  {% for category, articles in categories %}
+    {% if category == "events" %}
+      {% for article in articles|past_events() %}
+      {{ card_event(article) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+{% elif category == "news" %}
+
+<h3 class="pb-2 px-1 mx-1 mb-2">News</h3>
+  
+  {% for category, articles in categories %}
+    {% if category == "news" %}
+      {% for article in articles %}
+        {{ card_news(article) }}
+      {% endfor %}
+    {% endif %}
+  {% endfor %}
+
+{% endif %}
+
+{% endblock %}
+
+
