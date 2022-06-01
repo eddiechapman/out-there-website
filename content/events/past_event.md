@@ -1,4 +1,4 @@
-title: Bingus Band, Other Act
+title: ADGFDSDF Band, Other Act
 event-date: 2022-02-23
 event-start: 2022-02-23 18:30
 event-end: 2022-02-23 20:30
