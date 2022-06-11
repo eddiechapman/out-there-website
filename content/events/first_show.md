@@ -2,7 +2,7 @@ title: Mere of Light + TBA
 event-date: 2022-06-22
 event-start: 2022-06-22 18:30
 event-end: 2022-06-22 20:30
-event-location: Bingus Park
+event-location: The Park
 event-flyer: gauss.jpg
 template: event
 
