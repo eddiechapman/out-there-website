@@ -24,7 +24,7 @@
       <div class="col p-4 d-flex flex-column position-static">
         <strong class="d-inline-block mb-2 text-primary">News</strong>
         <h3 class="mb-0">{{ article.title }}</h3>
-        <div class="mb-1 text-muted">{{ article.locale_date }}</div>
+        <div class="mb-1 text-muted">{{ article.date | strftime('%B %-d, %Y') }}</div>
         <p class="card-text mb-auto">{{ article.content | truncate(100) }}</p>
         <a href="/{{ article.url }}" class="stretched-link">Continue reading</a>
       </div>

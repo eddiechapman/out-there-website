@@ -9,7 +9,10 @@
       <div class="col p-md-4 p-3 d-flex flex-column position-static">
         <header>
           <h3 class="article-title">{{ article.title }}</h3>
-          <p class="article-meta">Posted on <strong>{{ article.locale_date }}</strong> in <a href="/category/news.html">News</a></p>
+          <p class="article-meta">
+            Posted on <strong>{{ article.date | strftime('%B %-d, %Y') }}</strong> 
+            in <a href="/category/news.html">News</a>
+          </p>
         </header>
         
         <main class="article-body">
