@@ -24,6 +24,10 @@ See below for instructions and metadata descriptions for each type of content.
     
     The title of the article. Will appear at the top of the page and in the browser tab.
 
+**`template`** (*str*)
+
+    The name of the HTML template for rendering the content. Use "news" for news articles and "event" for event articles.
+
 - **`date`** (*`YYYY-MM-DD`, optional*)
     
     The article's publishing date in `YYYY-MM-DD` (eg. "posted on [DATE]"). Defaults to the date of article creation via Pelican's automatic `locale_date` attribute. Supply a `date` value to backdate an article.
@@ -36,6 +40,7 @@ See below for instructions and metadata descriptions for each type of content.
 
 ```
 title: New example announcement!
+template: news
 
 This is the body of the annoucement. I can use **markdown** `syntax`.
 ```
@@ -49,6 +54,10 @@ This is the body of the annoucement. I can use **markdown** `syntax`.
 - **`title`** (*str*)
 
     The title of the event. Will appear at the top of the page and in the browser tab.
+
+**`template`** (*str*)
+
+    The name of the HTML template for rendering the content. Use "news" for news articles and "event" for event articles.
 
 - **`event-date`** (*`YYYY-MM-DD`*)
 
@@ -78,6 +87,7 @@ This is the body of the annoucement. I can use **markdown** `syntax`.
 
 ```
 title: June 2nd: TBA @ TBA
+template: event
 event-date: 2022-06-02
 event-flyer: my-flyer.jpg
 event-time: 6:00pm
