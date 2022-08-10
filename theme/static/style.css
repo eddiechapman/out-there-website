@@ -18,3 +18,11 @@ article {
 .article-meta {
     color: #727272;
 }
+
+/* Achieve consistent carousel height via https://raybo.org/posts/2021-03-27-consistent-height-carousels-with-css-gradients-by-hacking-the-bootstrap-5-carousel/ */
+#carouselLead .carousel-item img {
+    object-fit: contain;
+    object-position: center;
+    height: 50vh;
+    overflow: hidden;
+}
