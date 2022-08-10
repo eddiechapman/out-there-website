@@ -44,7 +44,7 @@ def date_future(event_date):
 
 
 def future_events(iterable):
-    return (event for event in iterable if date_future(event.metadata["event-date"]))
+    return reversed([event for event in iterable if date_future(event.metadata["event-date"])])
 
 
 def past_events(iterable):
