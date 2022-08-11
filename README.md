@@ -24,9 +24,13 @@ See below for instructions and metadata descriptions for each type of content.
     
     The title of the article. Will appear at the top of the page and in the browser tab.
 
-**`template`** (*str*)
+- **`template`** (*str*)
 
     The name of the HTML template for rendering the content. Use "news" for news articles and "event" for event articles.
+
+- **`thumbnail`** (*filepath, optional*)
+
+    A filepath to a thumbnail image to be displayed on the article preview. Filepath is relative to `out-there-website/content/images/`. Must be 1:1 ratio (square).
 
 - **`date`** (*`YYYY-MM-DD`, optional*)
     
@@ -55,9 +59,13 @@ This is the body of the annoucement. I can use **markdown** `syntax`.
 
     The title of the event. Will appear at the top of the page and in the browser tab.
 
-**`template`** (*str*)
+- **`template`** (*str*)
 
     The name of the HTML template for rendering the content. Use "news" for news articles and "event" for event articles.
+
+- **`thumbnail`** (*filepath, optional*)
+
+    A filepath to a thumbnail image to be displayed on the article preview. Filepath is relative to `out-there-website/content/images/`. Must be 1:1 ratio (square).
 
 - **`event-date`** (*`YYYY-MM-DD`*)
 
@@ -88,6 +96,7 @@ This is the body of the annoucement. I can use **markdown** `syntax`.
 ```
 title: June 2nd: TBA @ TBA
 template: event
+thumbnail: 
 event-date: 2022-06-02
 event-flyer: my-flyer.jpg
 event-time: 6:00pm
