@@ -6,6 +6,7 @@ SITESUBTITLE = 'Experimental arts series'
 SITEURL = ''
 
 PATH = 'content'
+STATIC_PATHS = ['images']
 
 TIMEZONE = 'America/Chicago'
 DEFAULT_DATE = 'fs'

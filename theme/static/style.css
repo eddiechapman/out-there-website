@@ -19,6 +19,16 @@ article {
     color: #727272;
 }
 
+/* Rescale and center images embedded in markdown file articles */
+.article-body img {
+    height: auto;
+    max-width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Achieve consistent carousel height via https://raybo.org/posts/2021-03-27-consistent-height-carousels-with-css-gradients-by-hacking-the-bootstrap-5-carousel/ */
 #carouselLead .carousel-item img {
     object-fit: contain;
