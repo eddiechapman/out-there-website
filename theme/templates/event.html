@@ -3,36 +3,26 @@
 {% block title %}{{ article.title }}{% endblock %}
 
 {% block content %}
-<div class="row">
-  <div class="col-md-12">
-    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative bg-white">
-      <div class="col p-md-4 p-3 d-flex flex-column position-static">
-        <header>
-          <h3 class="article-title mb-2 pb-2">{{ article.title }}</h3>
-          <!-- <p class="article-meta">{{ article.metadata["event-date"] | format_date() }} at {{ article.metadata["event-location"] }}</p> -->
-        </header>
-        
-        <main class="clearfix article-body"> 
-          
-          
-          {% if article.metadata["event-flyer"] %}
-          <img src="/images/{{ article.metadata['event-flyer'] }}" class="col-md-6 float-md-end mb-3 ms-md-3 img-fluid">
-          {% endif %}
+<div class="content-card">
+  <header>
+    <h3 class="article-title mb-2 pb-2">{{ article.title }}</h3>
+  </header>
+  
+  <main class="article-body col-lg-10"> 
+    <dl>
+      <dt>Date</dt>
+      <dd>{{ article.metadata["event-date"] | format_date }}</dd>
+      <dt>Time</dt>
+      <dd>{{ article.metadata["event-time"] }}</dd>
+      <dt>Location</dt>
+      <dd>{{ article.metadata["event-location"] }}</dd>
+    </dl>
 
-          <div>
-            <dl>
-              <dt>Date</dt>
-              <dd>{{ article.metadata["event-date"] | format_date }}</dd>
-              <dt>Time</dt>
-              <dd>{{ article.metadata["event-time"] }}</dd>
-              <dt>Location</dt>
-              <dd>{{ article.metadata["event-location"] }}</dd>
-            </dl>
-          </div>
-          {{ article.content }}
-        </main>
-      </div>
-    </div>
-  </div>
+    {% if article.metadata["event-flyer"] %}
+    <img src="/images/{{ article.metadata['event-flyer'] }}">
+    {% endif %}
+
+    {{ article.content }}
+  </main>
 </div>
 {% endblock %}
