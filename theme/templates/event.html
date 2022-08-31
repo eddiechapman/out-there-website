@@ -18,10 +18,6 @@
       <dd>{{ article.metadata["event-location"] }}</dd>
     </dl>
 
-    {% if article.metadata["event-flyer"] %}
-    <img src="/images/{{ article.metadata['event-flyer'] }}">
-    {% endif %}
-
     {{ article.content }}
   </main>
 </div>

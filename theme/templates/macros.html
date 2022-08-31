@@ -4,7 +4,11 @@
   <div class="col">
     <h3 class="mb-1">{{ article.title }}</h3>
     <div class="mb-3 text-muted">{{ article.metadata["event-date"] | format_date() }} at {{ article.metadata["event-location"] }}</div>
-    {{ article.content | truncate(250) }}
+    {% if article.summary %}
+      {{ article.summary }}
+    {% else %}
+      {{ article.content | truncate(250) }}
+    {% endif %}
     <a href="/{{ article.url }}" class="stretched-link">Continue reading</a>
   </div>
   {% if article.metadata.get("thumbnail") %}
@@ -22,7 +26,11 @@
   <div class="col">
     <h3 class="mb-1">{{ article.title }}</h3>
     <div class="mb-3 text-muted">Posted on {{ article.date | strftime('%B %-d, %Y') }}</div>
-    {{ article.content | truncate(250) }}
+    {% if article.summary %}
+      {{ article.summary }}
+    {% else %}
+      {{ article.content | truncate(250) }}
+    {% endif %}
     <a href="/{{ article.url }}" class="stretched-link">Continue reading</a>
   </div>
   {% if article.metadata.get("thumbnail") %}
@@ -30,5 +38,14 @@
     <img class="rounded mx-auto d-block" height="200" width="200" src="{{ '/images/' ~ article.metadata['thumbnail'] }}">
   </div>
   {% endif %}
+</div>
+{% endmacro %}
+
+
+{% macro gallery_item(image_path) %}
+<div class="gallery-item col-lg-3 col-md-4 col-6 col-sm">
+  <a href="{{ SITEURL }}/images/{{ image_path }}" class="fancylight popup-btn" data-fancybox-group="light">
+      <img class="img-fluid" src="/images/{{ image_path }}" alt="">
+  </a>
 </div>
 {% endmacro %}

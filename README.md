@@ -71,10 +71,6 @@ This is the body of the annoucement. I can use **markdown** `syntax`.
 
     The date that the event will occur.
 
-- **`event-flyer`** (*file path, optional*)
-
-    A filepath to an image for the event, relative to `out-there-website/content/images/`.
-
 - **`event-time`** (*str*)
 
     The starting time of the event. 
@@ -98,7 +94,6 @@ title: June 2nd: TBA @ TBA
 template: event
 thumbnail: 
 event-date: 2022-06-02
-event-flyer: my-flyer.jpg
 event-time: 6:00pm
 event-location: TBA
 

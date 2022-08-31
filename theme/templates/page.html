@@ -1,15 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="row g-0 content-card">
-  <div class="col">
-    <header class="article-header">
-      <h3 class="article-title mb-2 pb-2">{{ page.title }}</h3>
-    </header>
+<div class="content-card">
+  <header class="article-header">
+    <h3 class="article-title mb-2 pb-2">{{ page.title }}</h3>
+  </header>
     
-    <main class="article-body">
-      {{ page.content }}
-    </main>
-  </div>
+  <main class="article-body">
+    {{ page.content }}
+
+    {% if page.title == "Gallery" %}
+    {% include "includes/gallery.html" %}
+    {% endif %}
+  </main>
 </div>
 {% endblock %}

@@ -1,1 +1,1 @@
-Title: Gallery
+title: Gallery

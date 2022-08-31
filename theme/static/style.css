@@ -35,13 +35,18 @@ article {
 }
 
 /* Rescale and center images embedded in markdown file articles */
-.article-body img {
+.article-image {
     height: auto;
     max-width: 80%;
     width: 300px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.gallery-item {
+	float: left;
+	margin-bottom: 10px;
 }
 
 
