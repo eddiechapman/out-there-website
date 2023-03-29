@@ -14,4 +14,8 @@
     {% endif %}
   </main>
 </div>
+
+{% if page.title == "About" %}
+{% include "includes/sponsors.html" %}
+{% endif %}
 {% endblock %}
