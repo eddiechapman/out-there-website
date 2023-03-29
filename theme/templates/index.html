@@ -9,8 +9,11 @@
 
   {% for category, articles in categories %}
     {% if category == "events" %}
-      {% set next_event = (articles|future_events()|first) %}
-      {{ card_event(next_event) }}
+      <!-- Set next_event to false in case there are no current future events -->
+      {% set next_event = (articles|future_events()|first|default(false, true)) %}
+      {% if next_event %}
+        {{ card_event(next_event) }}
+      {% endif %}
     {% endif %}
   {% endfor %}
 
