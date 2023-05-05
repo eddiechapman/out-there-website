@@ -6,7 +6,9 @@ date: 2023-05-05
 
 ### Chelsea Tadeyeske
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/QKb71ViO8Z4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<div class="ratio ratio-16x9">
+  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/QKb71ViO8Z4" allowfullscreen></iframe>
+</div>
 
 July 24th, 2022  
 
