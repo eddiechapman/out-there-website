@@ -2,6 +2,7 @@ title: Photos from our July show
 thumbnail: 2022-07-24_lovemoms/ira_thumbnail.jpg
 summary: Check out some stills from our first Out There show held at Lovemoms on the Milwaukee River.
 template: news
+date: 2022-08-31
 
 Check out some stills from our first Out There show held at Lovemoms on the Milwaukee River.
 

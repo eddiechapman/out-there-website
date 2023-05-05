@@ -2,6 +2,7 @@ title: Video: Tamper Tamper at Lovemom's
 thumbnail: tamper-tamper-lovemoms-video-thumb.png
 summary: A video of Tamper Tamper from July 2022 Out There 
 template: news
+date: 2023-05-05
 
 ### Tamper Tamper
 
