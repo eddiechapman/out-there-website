@@ -2,6 +2,7 @@ title: Photos from our August show
 thumbnail: 2022-08-18_uec/roberto_thumbnail.jpg
 summary: Images from the August Out There show at the Menomonee Valley Urban Ecology Center.
 template: news
+date: 2022-08-31
 
 Check out some stills from the August Out There show at the Menomonee Valley Urban Ecology Center.
 
