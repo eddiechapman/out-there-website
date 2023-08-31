@@ -6,17 +6,17 @@ Built with [Pelican](https://getpelican.com/), styled with [Bootstrap](https://g
 
 ## Creating new content
 
-Blog content comes in two varieties: **news**, representing announcements or recaps, and **events** containing information about a specific performance event.
+Blog content comes in two varieties: **videos**, representing video releases, and **events** containing information about a specific performance event.
 
-To post a news or event article, create a markdown file with the appropriate metadata (see below) and place it in either `out-there-website/content/events` or `out-there-website/content/news`.
+To post a video or event article, create a markdown file with the appropriate metadata (see below) and place it in either `out-there-website/content/events` or `out-there-website/content/videos`.
 
 Run `pelican -t theme --autoreload --listen content` and you will see the new post locally. Commit and push the new content to Github and it will appear on the website.
 
 See below for instructions and metadata descriptions for each type of content.
 
-## News
+## Videos
 
-> Represents a blog post or announcement. 
+> Represents a video release. 
 
 ### Metadata
 
@@ -26,7 +26,7 @@ See below for instructions and metadata descriptions for each type of content.
 
 - **`template`** (*str*)
 
-    The name of the HTML template for rendering the content. Use "news" for news articles and "event" for event articles.
+    The name of the HTML template for rendering the content. Use "video" for video articles and "event" for event articles.
 
 - **`thumbnail`** (*filepath, optional*)
 
@@ -38,15 +38,15 @@ See below for instructions and metadata descriptions for each type of content.
 
 - **`content`** (*str, markdown*)
     
-    The body of the news article. Anything below the metadata section is considered to be `content`. Full markdown syntax support.
+    The body of the article. Anything below the metadata section is considered to be `content`. Full markdown syntax support.
 
-### News example
+### Video example
 
 ```
-title: New example announcement!
-template: news
+title: New example video!
+template: video
 
-This is the body of the annoucement. I can use **markdown** `syntax`.
+This is the body of the video article. I can use **markdown** `syntax`.
 ```
 
 ## Events

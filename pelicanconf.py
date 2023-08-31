@@ -57,9 +57,9 @@ def format_date(date_string):
     return date_obj.strftime('%B %-d, %Y')
 
 
-def news_articles(categories):
+def video_articles(categories):
     for category, articles in categories:
-        if category.name == "news":
+        if category.name == "video":
             return articles
 
 
@@ -91,5 +91,5 @@ JINJA_FILTERS = {
     "future_events": future_events,
     "past_events": past_events,
     "format_date": format_date,
-    "news_articles": news_articles
+    "video_articles": video_articles
 }

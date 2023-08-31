@@ -1,11 +1,11 @@
 {% extends "base.html" %}
-{% from "macros.html" import card_news, card_event,  title_card %}
+{% from "macros.html" import card_video, card_event,  title_card %}
 
 {% block content %}
 
 {% if category == "events" %}
+
   <h3 class="pb-2 px-1 mx-1 mb-2">Events</h3>
-  
   
   {% for category, articles in categories %}
     {% if category == "events" %}
@@ -25,14 +25,14 @@
     {% endif %}
   {% endfor %}
 
-{% elif category == "news" %}
+{% elif category == "videos" %}
 
-<h3 class="pb-2 px-1 mx-1 mb-2">News</h3>
+<h3 class="pb-2 px-1 mx-1 mb-2">Videos</h3>
   
   {% for category, articles in categories %}
-    {% if category == "news" %}
+    {% if category == "videos" %}
       {% for article in articles %}
-        {{ card_news(article) }}
+        {{ card_video(article) }}
       {% endfor %}
     {% endif %}
   {% endfor %}

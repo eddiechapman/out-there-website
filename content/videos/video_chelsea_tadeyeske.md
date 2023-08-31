@@ -1,7 +1,7 @@
-title: Video: Chelsea Tadeyeske at Lovemom's
+title: Chelsea Tadeyeske at Lovemom's
 thumbnail: chelsea-tadeyeske-lovemoms-video-thumb.png
 summary: A video of Chelsea Tadeyeske from July 2022 Out There 
-template: news
+template: video
 date: 2023-05-05
 
 ### Chelsea Tadeyeske

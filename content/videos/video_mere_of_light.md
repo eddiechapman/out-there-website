@@ -1,7 +1,7 @@
-title: Video: Mere of Light at Lovemom's
+title: Mere of Light at Lovemom's
 thumbnail: mere-of-light-lovemoms-video-thumb.png
 summary: A video of Mere of Light from July 2022 Out There 
-template: news
+template: video
 date: 2023-05-05
 
 ### Mere of Light

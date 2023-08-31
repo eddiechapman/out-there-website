@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% from "macros.html" import card_event, card_news %}
+{% from "macros.html" import card_event, card_video %}
 
 {% block content %}
 
@@ -18,9 +18,9 @@
   {% endfor %}
 
   {% for category, articles in categories %}
-    {% if category == "news" %}
+    {% if category == "videos" %}
       {% for article in articles[:1] %}
-      {{ card_news(article) }}
+      {{ card_video(article) }}
       {% endfor %}
     {% endif %}
   {% endfor %}
