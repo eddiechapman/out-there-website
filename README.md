@@ -99,3 +99,7 @@ event-location: TBA
 
 Announcing our next show, **TBA @ TBA** featuring your favorites, *TBA*. 
 ```
+
+## Color theme
+
+Found here: https://colorhunt.co/palette/fefbf6a6d1e67f52833d3c42

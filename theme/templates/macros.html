@@ -1,6 +1,6 @@
 {% macro card_event(article) %}
 <div class="content-card row g-0">
-  <strong class="mb-2 text-success">Event</strong>
+  <strong class="mb-2" style="color: #7F5283;">Event</strong>
   <div class="col">
     <h3 class="mb-1">{{ article.title }}</h3>
     <div class="mb-3 text-muted">{{ article.metadata["event-date"] | format_date() }} at {{ article.metadata["event-location"] }}</div>
@@ -22,7 +22,7 @@
 
 {% macro card_video(article) %}
 <div class="content-card row g-0">
-  <strong class="mb-2 text-primary">Video</strong>
+  <strong class="mb-2" style="color: #7F5283;">Video</strong>
   <div class="col">
     <h3 class="mb-1">{{ article.title }}</h3>
     <div class="mb-3 text-muted">Posted on {{ article.date | strftime('%B %-d, %Y') }}</div>

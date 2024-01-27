@@ -6,6 +6,11 @@
 
 body {
     font-family: 'Lora', serif;
+    color: #3D3C42;
+}
+
+.header-light {
+    color: white;
 }
 
 .content-card {
@@ -13,7 +18,7 @@ body {
     border-radius: .25rem;
     box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075);
     padding: 1.5rem;
-    background-color: #fff;
+    background-color: #FEFBF6;
     margin-bottom:  1.5rem;
     overflow: hidden;
     position: relative;
@@ -21,7 +26,7 @@ body {
 
 article {
     margin-bottom: 4rem;
-    background-color: white;
+    background-color: #FEFBF6;
 }
 
 .article-title {
@@ -58,6 +63,6 @@ article {
 #carouselLead .carousel-item img {
     object-fit: contain;
     object-position: center;
-    height: 50vh;
+    max-height: 50vh;
     overflow: hidden;
 }
