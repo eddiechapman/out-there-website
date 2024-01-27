@@ -9,10 +9,6 @@ body {
     color: #3D3C42;
 }
 
-.header-light {
-    color: white;
-}
-
 .content-card {
     border: 1px solid #dee2e6;
     border-radius: .25rem;
@@ -51,6 +47,10 @@ article {
 
 .nav-link {
     font-size: 1.25rem;
+}
+
+.navbar-brand > h1 {
+    color: #3D3C42;
 }
 
 .gallery-item {
