@@ -103,3 +103,23 @@ Announcing our next show, **TBA @ TBA** featuring your favorites, *TBA*.
 ## Color theme
 
 Found here: https://colorhunt.co/palette/fefbf6a6d1e67f52833d3c42
+
+
+## Changelog
+
+**`2024-01-27`**
+
+- color scheme
+    + https://colorhunt.co/palette/fefbf6a6d1e67f52833d3c42
+    + applies to font text, background pattern, background colors
+- nav bar
+    + merged "contact" with "about" page
+    + reordered nav menu links
+    + increased title and header font sizes
+    + added instagram link to nav
+- carousel
+    + swap art with photos from events
+    + reduce max height on mobile
+    + slow down transition time
+    + transition via crossfade
+
