@@ -3,13 +3,38 @@
 
 {% block content %}
 
-  {% include "includes/carousel.html" %}
+{% include "includes/carousel.html" %}
 
-  {% include "includes/description.html" %}
+  <div class="content-card">
+    <p class="lead text-center mb-0 fs-4">
+      <em>Out There</em> is an experimental performance series curating strange sounds in unique spaces.
+    </p>
+  </div>
 
-  {% for category, articles in categories %}
+  <div class="content-card">
+    <p class="px-md-5 fs-5">
+      Out There Series is an ongoing opportunity for Midwest poets and experimental musicians to share 
+      their unique experiences of sound in distinct locations notable for their local history.
+    </p>
+      
+    <p class="px-md-5 fs-5">
+      The series is meant to reflect interconnections between environmental and artistic ecosystems, 
+      creating a meditative atmosphere where the sound of birdcall is as vital as guitar. 
+    </p>
+
+    <p class="px-md-5 fs-5">
+      An Out There gathering is a chance to foster deep listening, nurturing appreciation for the sounds 
+      that nature provides and supporting them with mellow musicality and poetry.
+    </p>
+    
+    <p class="px-md-5 fs-5">
+      Please direct questions to <a href="mailto:elisemcardle13@gmail.com">elisemcardle13@gmail.com</a>.
+    </p>
+  </div>
+
+  <!-- {% for category, articles in categories %}
     {% if category == "events" %}
-      <!-- Set next_event to false in case there are no current future events -->
+      Set next_event to false in case there are no current future events
       {% set next_event = (articles|future_events()|first|default(false, true)) %}
       {% if next_event %}
         {{ card_event(next_event) }}
@@ -23,7 +48,11 @@
       {{ card_video(article) }}
       {% endfor %}
     {% endif %}
-  {% endfor %}
+  {% endfor %} -->
 
-  {% include "includes/sponsors.html" %}
+  <div class="content-card row g-0">
+    <div class="col">
+      <img class="img-fluid d-block m-auto" src="/images/sponsors_2023_2.png" alt="">
+    </div>
+  </div>
 {% endblock %}

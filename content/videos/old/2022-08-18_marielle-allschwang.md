@@ -1,4 +1,5 @@
 title: Marielle Allschwang at the Urban Ecology Center
+subtitle: August 2022 at the Urban Ecology Center
 thumbnail: marielle-allschwang-uec-video-thumb.png
 summary: A video of Marielle Allschwang performing at the August 2022 Out There 
 template: video

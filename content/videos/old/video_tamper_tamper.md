@@ -1,4 +1,5 @@
 title: Tamper Tamper at Lovemom's
+subtitle: July 2022 at Lovemom's
 thumbnail: tamper-tamper-lovemoms-video-thumb.png
 summary: A video of Tamper Tamper from July 2022 Out There 
 template: video

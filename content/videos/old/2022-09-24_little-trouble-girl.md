@@ -1,4 +1,5 @@
 title: Little Trouble Girl at Echo Valley Farm
+subtitle: September 2022 at Echo Valley Farm
 thumbnail: little-trouble-girl-echo-valley-farm-video-thumb.png
 summary: A video of Little Trouble Girl performing at the September 2022 Out There 
 template: video

@@ -1,19 +1,15 @@
 {% macro card_event(article) %}
 <div class="content-card row g-0">
-  <strong class="mb-2" style="color: #7F5283;">Event</strong>
   <div class="col">
     <h3 class="mb-1">{{ article.title }}</h3>
-    <div class="mb-3 text-muted">{{ article.metadata["event-date"] | format_date() }} at {{ article.metadata["event-location"] }}</div>
-    {% if article.summary %}
-      {{ article.summary }}
-    {% else %}
-      {{ article.content | truncate(250) }}
-    {% endif %}
-    <a href="/{{ article.url }}" class="stretched-link">Continue reading</a>
+    <div class="mb-3 text-muted">{{ article.metadata["event-date"] | format_date() }} at
+      {{ article.metadata["event-location"] }}</div>
+    <a href="/{{ article.url }}" class="stretched-link"></a>
   </div>
   {% if article.metadata.get("thumbnail") %}
   <div class="align-self-center col-auto d-none d-md-block ps-4">
-    <img class="rounded mx-auto d-block" height="200" width="200" src="{{ '/images/' ~ article.metadata['thumbnail'] }}">
+    <img class="rounded mx-auto d-block" height="200" width="200"
+      src="{{ '/images/' ~ article.metadata['thumbnail'] }}">
   </div>
   {% endif %}
 </div>
@@ -21,23 +17,13 @@
 
 
 {% macro card_video(article) %}
-<div class="content-card row g-0">
-  <strong class="mb-2" style="color: #7F5283;">Video</strong>
+<div class="content-card video-preview row g-0"
+  style="background-image: url('{{ '/images/' ~ article.metadata['preview'] }}');">
   <div class="col">
-    <h3 class="mb-1">{{ article.title }}</h3>
-    <div class="mb-3 text-muted">Posted on {{ article.date | strftime('%B %-d, %Y') }}</div>
-    {% if article.summary %}
-      {{ article.summary }}
-    {% else %}
-      {{ article.content | truncate(250) }}
-    {% endif %}
-    <a href="/{{ article.url }}" class="stretched-link">Continue reading</a>
+    <h3 class="text-light mb-1 fs-3 fw-bold">{{ article.title }}</h3>
+    <p class="text-light lead fs-4 fw-bolder">{{ article.subtitle }}</p>
+    <a href="/{{ article.url }}" class="stretched-link"></a>
   </div>
-  {% if article.metadata.get("thumbnail") %}
-  <div class="align-self-center col-auto d-none d-md-block ps-4">
-    <img class="rounded mx-auto d-block" height="200" width="200" src="{{ '/images/' ~ article.metadata['thumbnail'] }}">
-  </div>
-  {% endif %}
 </div>
 {% endmacro %}
 
@@ -45,7 +31,7 @@
 {% macro gallery_item(image_path) %}
 <div class="gallery-item col-lg-3 col-md-4 col-6 col-sm">
   <a href="{{ SITEURL }}/images/{{ image_path }}" class="fancylight popup-btn" data-fancybox-group="light">
-      <img class="img-fluid" src="/images/{{ image_path }}" alt="">
+    <img class="img-fluid" src="/images/{{ image_path }}" alt="">
   </a>
 </div>
 {% endmacro %}

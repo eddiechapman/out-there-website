@@ -1,4 +1,5 @@
 title: Chelsea Tadeyeske at Lovemom's
+subtitle: July 2022 at Lovemom's
 thumbnail: chelsea-tadeyeske-lovemoms-video-thumb.png
 summary: A video of Chelsea Tadeyeske from July 2022 Out There 
 template: video

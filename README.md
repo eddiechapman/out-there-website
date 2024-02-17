@@ -16,7 +16,7 @@ See below for instructions and metadata descriptions for each type of content.
 
 ## Videos
 
-> Represents a video release. 
+> Represents the videos from a single event. 
 
 ### Metadata
 
@@ -24,30 +24,30 @@ See below for instructions and metadata descriptions for each type of content.
     
     The title of the article. Will appear at the top of the page and in the browser tab.
 
+- **`subtitle`** (*str*)
+    
+    The location and date of the video. Used in the preview card on the list of videos.
+
 - **`template`** (*str*)
 
-    The name of the HTML template for rendering the content. Use "video" for video articles and "event" for event articles.
+    The name of the HTML template for rendering the content. Use "video" for video articles 
+    and "event" for event articles.
 
-- **`thumbnail`** (*filepath, optional*)
+- **`preview`** (*filepath, optional*)
 
-    A filepath to a thumbnail image to be displayed on the article preview. Filepath is relative to `out-there-website/content/images/`. Must be 1:1 ratio (square).
+    A filepath to preview image that will be used as the background of the preview card. 
+    Filepath is relative to `out-there-website/content/images/`. Must be 1:1 ratio (square).
 
 - **`date`** (*`YYYY-MM-DD`, optional*)
     
-    The article's publishing date in `YYYY-MM-DD` (eg. "posted on [DATE]"). Defaults to the date of article creation via Pelican's automatic `locale_date` attribute. Supply a `date` value to backdate an article.
+    The date the video was shot in `YYYY-MM-DD`. Defaults to the date of article creation 
+    via Pelican's automatic `locale_date` attribute. Supply a `date` value to backdate an article.
 
 - **`content`** (*str, markdown*)
     
-    The body of the article. Anything below the metadata section is considered to be `content`. Full markdown syntax support.
+    The body of the article. Anything below the metadata section is considered to be `content`. 
+    Full markdown syntax support.
 
-### Video example
-
-```
-title: New example video!
-template: video
-
-This is the body of the video article. I can use **markdown** `syntax`.
-```
 
 ## Events
 
@@ -106,6 +106,20 @@ Found here: https://colorhunt.co/palette/fefbf6a6d1e67f52833d3c42
 
 
 ## Changelog
+
+**`2024-02-17`**
+
+- video articles
+    + now represent all the videos from a single show
+    + preview cards only have `title` and `subtitle`
+    + preview cards have background image supplied by John
+    + reorganized video md files to reflect this
+- nav bar reorganization
+    + removed `home` link
+    + removed `about` link
+- home page 
+    + moved `about` content to the home page
+
 
 **`2024-01-27`**
 

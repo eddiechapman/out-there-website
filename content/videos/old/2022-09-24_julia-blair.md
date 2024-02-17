@@ -1,4 +1,5 @@
 title: Julia Blair at Echo Valley Farm
+subtitle: September 2022 at Echo Valley Farm
 thumbnail: julia-blair-echo-valley-farm-video-thumb.png
 summary: A video of Julia Blair performing at the September 2022 Out There 
 template: video

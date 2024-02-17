@@ -1,4 +1,5 @@
 title: Roberto Harrison at the Urban Ecology Center
+subtitle: August 2022 at the Urban Ecology Center
 thumbnail: roberto-harrison-uec-video-thumb.png
 summary: A video of Roberto Harrison performing at the August 2022 Out There 
 template: video

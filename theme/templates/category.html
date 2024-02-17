@@ -31,7 +31,7 @@
   
   {% for category, articles in categories %}
     {% if category == "videos" %}
-      {% for article in articles %}
+      {% for article in articles|sort_dates() %}
         {{ card_video(article) }}
       {% endfor %}
     {% endif %}

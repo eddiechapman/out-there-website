@@ -20,10 +20,24 @@ body {
     position: relative;
 }
 
+.video-preview {
+    min-height: 250px;
+    background-size: cover;
+    background-position: center;
+}
+
+.text-light {
+    color: #FEFBF6;
+    text-shadow: 2px 2px 4px black;
+}
+
+
+
 article {
     margin-bottom: 4rem;
     background-color: #FEFBF6;
 }
+
 
 .article-title {
     padding-top: .5rem;

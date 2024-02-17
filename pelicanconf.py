@@ -61,6 +61,10 @@ def video_articles(categories):
     for category, articles in categories:
         if category.name == "video":
             return articles
+        
+
+def sort_dates(iterable):
+    return sorted(iterable, key=lambda x: x.metadata["date"], reverse=True)
 
 
 # def future_events(categories):
@@ -91,5 +95,6 @@ JINJA_FILTERS = {
     "future_events": future_events,
     "past_events": past_events,
     "format_date": format_date,
-    "video_articles": video_articles
+    "video_articles": video_articles,
+    "sort_dates": sort_dates
 }
